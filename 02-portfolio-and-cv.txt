@@ -1,0 +1,37 @@
+Muhamad Saeful Hariz
+
+1. membuat sebuah folder kosong dengan namamu sendiri (mkdir Muhamad-Hariz)
+
+2. membuat sebuah file di dalam folder tersebut dengan nama README.md, isi file tersebut dengan kalimat "Halo perkenalkan aku halaman utama" (cd Muhamad-Hariz => touch README.md => nano README.md => Ketik "Halo perkenalkan aku halaman utama")
+
+3. inisialisasi folder tersebut dengan Git, kemudian simpan perubahan menggunakan commit dengan pesan "First commit" (git init . => git add . => git commit -m "First commit")
+
+4. Ganti teks sebelumnya dengan `"Hello world" (nano README.md => lalu ubah kata sebelumnya menjadi "Hello world")
+
+5. Tampilkan isi teks tersebut pada command line menggunakan command cat (cat README.md)
+
+6. Ternyata kamu tidak ingin perubahan tersebut, dan ingin kembali ke perubahan seperti commit yang terakhir. Lakukan teknik git backtracking untuk mengembalikan ke perubahan commit yang terakhir. (git log => git checkout <log code> README.md)
+
+7. buat branch baru dengan nama cv, hal ini berguna agar histori kita tidak tercampur (git checkout -b CV)
+
+8. pindah branch ke dalam cv, kemudian buat file dengan nama cv.txt dan isi file tersebut dengan kalimat: "Ini adalah file CV" (touch cv.txt => nano cv.txt)
+
+9. kemudian simpan perubahan menggunakan commit dengan pesan "Initial CV" (git add cv.txt => git commit -m "Initial CV")
+
+10. tambahkan 3 perusahaan yang akan kamu lamar, dan setiap menuliskan 1 nama perusahaan kamu harus melakukan dokumentasi dan menyimpan perubahan menggunakan commit (touch <nama perusahaan> => git add <nama perusahaan.pdf> => git commmit -m "menambahkan perusahaan <urutan>")
+
+11. kembali ke branch master (git checkout master)
+
+12. ubah file README.md menjadi (nano README.md => git commit -m "Update master pertama")
+	Halo perkenalkan aku halaman utama
+
+	Ini adalah update pertama pada branch master
+
+	jangan lupa untuk menyimpan perubahan menggunakan commit dengan pesan
+	"update master pertama"
+
+13. gabungkan branch cv ke dalam branch master menggunakan perintah git merge (git merge CV)
+
+14. unggah Git Repository project tersebut tersebut ke dalam GitHub (git remote add <Repository Link> => git push origin master)
+
+Hasil push ada pada branch master :))
